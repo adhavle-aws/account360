@@ -1,13 +1,13 @@
 ## AWS Account 360 App
 
-AWS Account 360 App is a full-stack sample web application that creates a storefront (and backend) for customers to shop for fictitious books. The entire application can be created with a single CloudFormation template. **[Try out the deployed application here](https://d2h3ljlsmzojxz.cloudfront.net/)**!
+AWS Account 360 App is a full-stack  web application that creates a storefront (and backend) for customers to shop for fictitious books. The entire application can be created with a single CloudFormation template. **[Try out the deployed application here](https://d2h3ljlsmzojxz.cloudfront.net/)**!
 
 You can browse and search for books, look at recommendations and best sellers, manage your cart, checkout, view your orders, and more.  Get started with building your own below!
 &nbsp;
 
 ## License Summary
 
-This sample code is made available under a modified MIT license. See the LICENSE file.
+This code is made available under a modified MIT license. See the LICENSE file.
 
 &nbsp;
 
@@ -195,7 +195,7 @@ BooksTable {
 
 The table's partition key is the ID attribute of a book. The partition key allows you to look up a book with just the ID. Additionally, there is a global secondary index (GSI) on the category attribute. The GSI allows you to run a query on the category attribute and build the books by category experience. 
 
-For future updates to the application, we plan to return the results of a search/filter by category via Elasticsearch.  Additionally, there is no “description” attribute, as this sample application does not feature pages for individual books.  This may be something users wish to add.
+For future updates to the application, we plan to return the results of a search/filter by category via Elasticsearch.  Additionally, there is no “description” attribute, as this  application does not feature pages for individual books.  This may be something users wish to add.
 
 &nbsp;
 
@@ -693,7 +693,7 @@ You're done! Any future updates you make to your repository will get pushed to y
 
 ## Considerations for demo purposes
 
-1. In order to make AWS Account 360 App an effective demonstration from the moment it is created, the CloudFormation template kicks off a Lambda function we wrote to pre-load a list of books into the product catalog (the Books table in DynamoDB).  In the same way, we used a Lambda function to pre-load sample friends (into Neptune) and manually populated the list of Best Sellers (on the front page only).  This enables you to sign up as a new user and immediately see what the running store would look like, including recommendations based on what friends have purchased and what the best-selling books section does.  
+1. In order to make AWS Account 360 App an effective demonstration from the moment it is created, the CloudFormation template kicks off a Lambda function we wrote to pre-load a list of books into the product catalog (the Books table in DynamoDB).  In the same way, we used a Lambda function to pre-load  friends (into Neptune) and manually populated the list of Best Sellers (on the front page only).  This enables you to sign up as a new user and immediately see what the running store would look like, including recommendations based on what friends have purchased and what the best-selling books section does.  
 
 2. You will notice that the Past orders and Best sellers pages are empty at first run.  These are updated as soon as an order is placed. 
 
@@ -729,7 +729,7 @@ You're done! Any future updates you make to your repository will get pushed to y
 
 ## Additions, forks, and contributions
 
-We are excited that you are interested in using AWS Account 360 App!  This is a great place to start if you are just beginning with AWS and want to get a functional application up and running.  It is equally useful if you are looking for a sample full-stack application to fork off of and build your own custom application.  We encourage developer participation via contributions and suggested additions.  Of course you are welcome to create your own version!
+We are excited that you are interested in using AWS Account 360 App!  This is a great place to start if you are just beginning with AWS and want to get a functional application up and running.  It is equally useful if you are looking for a  full-stack application to fork off of and build your own custom application.  We encourage developer participation via contributions and suggested additions.  Of course you are welcome to create your own version!
 
 Please see the [contributing guidelines](CONTRIBUTING.md) for more information.
 
